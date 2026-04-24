@@ -39,9 +39,11 @@ a {
     transition: 0.37s ease;
 }
 
-a:hover {
+a:hover,
+a:hover>hr {
     background-color: #8AB2CE;
     color: #0A131D;
+    border-color: #0A131D;
 }
 
 html {
