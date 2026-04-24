@@ -26,18 +26,23 @@ hr {
     margin: 7px 0;
 }
 
+h1 {
+    padding: 17px;
+}
 
 a {
     display: block;
     color: #8AB2CE;
     text-decoration: none;
-    width: 137px;
-    background-color: #0A131D;
+    width: 37vw;
+    min-width: 100px;
+    background-color: #19232b;
     border: solid 1px #8AB2CE;
     padding: 10px;
     border-radius: 17px;
     text-align: center;
     transition: 0.37s ease;
+    font-size: clamp(10px, 3vw);
 }
 
 a:hover,
@@ -54,7 +59,8 @@ html {
 }
 
 body {
-    background-color: #0A131D;
+    background: radial-gradient(circle, #1d242b, #0A131D 73%);
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,8 +89,6 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
-    padding: 17px;
-    background-color: #0A131D;
     width: 100%;
     height: auto;
     position: sticky;
@@ -116,10 +120,12 @@ main {
 
 .card {
     padding: 17px;
-    margin: 17px 0;
     border: solid 1px #8AB2CE;
     border-radius: 17px;
     width: 100%;
+    transition: 0.37s ease;
+    background-color: #19232b;
+    margin: 17px 17px 0 0;
 }
 
 .section {
@@ -132,7 +138,8 @@ main {
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 7px;
+    gap: 17px;
+    transition: 0.37s ease;
 }
 
 footer {
@@ -144,12 +151,13 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
+    transition: 0.37s ease;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1050px) {
 
     html {
-        scroll-padding-top: 137px;
+        scroll-padding-top: 73px;
     }
 
     body {
@@ -162,6 +170,7 @@ footer {
         /* justify-content: center; */
         /* Remove or change this */
         min-height: 100vh;
+        min-width: 100vw;
     }
 
     header {
@@ -173,8 +182,9 @@ footer {
         /* Ensure it's not transparent */
         z-index: 1000;
         /* Keeps it above other content */
-        width: auto;
+        width: 100vw;
         height: auto;
+        border-bottom: solid 1px #8AB2CE;
     }
 
     .nav-bar {
@@ -183,7 +193,28 @@ footer {
         justify-content: space-between;
         align-items: center;
         background-color: #0A131D;
-        max-width: 100%;
+        width: 100%;
+    }
+
+    li {
+        padding: 17px;
+        width: 14vw;
+        transition: 0.37s ease;
+    }
+
+    a {
+        flex: 1;
+        display: block;
+        color: #8AB2CE;
+        text-decoration: none;
+        width: 100%;
+        background-color: #19232b;
+        border: solid 1px #8AB2CE;
+        padding: 10px;
+        border-radius: 17px;
+        text-align: center;
+        transition: 0.37s ease;
+        font-size: 1.3vw;
     }
 
     a:has(.a7r-logo) {
@@ -193,7 +224,8 @@ footer {
     }
 
     .a7r-logo {
-        width: 17vw;
+        width: 100%;
+        max-width: 17vw;
     }
 
     main {
@@ -204,8 +236,8 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto;
-        gap: 17px;
         width: 100%;
+        gap: 0 17px;
     }
 
     .links {
@@ -217,6 +249,6 @@ footer {
     }
 
     .links>a {
-        width: auto;
+        width: 100%;
     }
 }
