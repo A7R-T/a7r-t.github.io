@@ -11,6 +11,7 @@
     margin: 0px;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'HurmitNerdFont';
 }
 
 ul {
@@ -110,7 +111,7 @@ a:has(.a7r-logo) {
 
 main {
     flex: 1;
-    width: 100%;
+    width: 100vw;
 }
 
 .card {
@@ -135,7 +136,8 @@ main {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
+    padding: 17px;
 }
 
 .links>a {
