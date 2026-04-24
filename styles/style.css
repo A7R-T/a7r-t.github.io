@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'HurmitNerdFont';
+    src: url('/assets/Hermit/HurmitNerdFont-Regular.woff2') format('woff2'),
+        url('/assets/Hermit/HurmitNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -100,6 +108,7 @@ a:has(.a7r-logo) {
 
 main {
     flex: 1;
+    width: 100%;
 }
 
 .card {
@@ -111,7 +120,7 @@ main {
 }
 
 .section {
-    padding: 17vh 0;
+    padding: 17vh 17px;
 }
 
 @media (min-width: 768px) {
@@ -165,5 +174,13 @@ main {
 
     main {
         flex: 1;
+    }
+
+    .card-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 17px;
+        width: 100%;
     }
 }
