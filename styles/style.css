@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'HurmitNerdFont';
+    font-family: 'Hurmit Nerd Font';
     src: url('/assets/Hermit/HurmitNerdFont-Regular.woff2') format('woff2'),
         url('/assets/Hermit/HurmitNerdFont-Regular.ttf') format('truetype');
     font-weight: normal;
@@ -11,7 +11,7 @@
     margin: 0px;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'HurmitNerdFont';
+    font-family: 'Hurmit Nerd Font';
 }
 
 ul {
@@ -61,7 +61,7 @@ body {
     /* Remove or change this */
     min-height: 100vh;
     /* Change height to min-height */
-    width: 100vw;
+    min-width: 100vw;
     font-size: 17px;
     padding: 0 17px 17px 17px;
     color: #8AB2CE;
@@ -82,7 +82,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     padding: 17px;
     background-color: #0A131D;
     width: 100vw;
@@ -111,7 +111,7 @@ a:has(.a7r-logo) {
 
 main {
     flex: 1;
-    width: 100vw;
+    width: 100%;
 }
 
 .card {
@@ -136,7 +136,7 @@ main {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     padding: 17px;
 }
 
