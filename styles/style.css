@@ -11,15 +11,33 @@ ul {
     margin: 0px;
 }
 
+hr {
+    border: solid 1px #8AB2CE;
+    width: 100%;
+    margin: 7px 0;
+}
+
+
 a {
     display: block;
-    color: #0A131D;
+    color: #8AB2CE;
     text-decoration: none;
     width: 137px;
-    background-color: #8AB2CE;
+    background-color: #0A131D;
+    border: solid 1px #8AB2CE;
     padding: 10px;
     border-radius: 17px;
     text-align: center;
+    transition: 0.37s ease;
+}
+
+a:hover {
+    background-color: #8AB2CE;
+    color: #0A131D;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,11 +45,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    /* Keep align-items to center horizontally */
+    /* justify-content: center; */
+    /* Remove or change this */
+    min-height: 100vh;
+    /* Change height to min-height */
     width: 100vw;
     font-size: 17px;
-    padding: 10px;
+    padding: 17px;
+    color: #8AB2CE;
+    text-align: center;
 }
 
 .nav-bar {
@@ -39,11 +62,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 17px;
     background-color: #0A131D;
     width: 100vw;
-    height: auto
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .nav-bar>li {
@@ -56,6 +82,7 @@ a:has(.a7r-logo) {
     justify-content: center;
     background-color: transparent;
     width: auto;
+    border: none;
 }
 
 .a7r-logo {
@@ -66,15 +93,26 @@ main {
     flex: 1;
 }
 
+.card {
+    padding: 17px;
+    margin: 17px;
+    border: solid 1px #8AB2CE;
+    border-radius: 17px;
+}
+
 @media (min-width: 768px) {
 
     body {
         background-color: #0A131D;
         display: flex;
         flex-direction: column;
+        /* Keep flex-direction */
         align-items: center;
-        justify-content: center;
-        height: 100vh;
+        /* Keep align-items to center horizontally */
+        /* justify-content: center; */
+        /* Remove or change this */
+        min-height: 100vh;
+        /* Change height to min-height */
         width: 100vw;
     }
 
