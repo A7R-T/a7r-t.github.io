@@ -52,9 +52,18 @@ body {
     /* Change height to min-height */
     width: 100vw;
     font-size: 17px;
-    padding: 17px;
+    padding: 0 17px 17px 17px;
     color: #8AB2CE;
     text-align: center;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-bar {
@@ -95,9 +104,14 @@ main {
 
 .card {
     padding: 17px;
-    margin: 17px;
+    margin: 17px 0;
     border: solid 1px #8AB2CE;
     border-radius: 17px;
+    width: 100%;
+}
+
+.section {
+    padding: 17vh 0;
 }
 
 @media (min-width: 768px) {
@@ -114,6 +128,19 @@ main {
         min-height: 100vh;
         /* Change height to min-height */
         width: 100vw;
+    }
+
+    header {
+        position: -webkit-sticky;
+        /* For Safari */
+        position: sticky;
+        top: 0;
+        background-color: #0A131D;
+        /* Ensure it's not transparent */
+        z-index: 1000;
+        /* Keeps it above other content */
+        width: auto;
+        height: auto;
     }
 
     .nav-bar {
